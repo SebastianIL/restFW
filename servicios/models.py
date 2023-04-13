@@ -10,3 +10,5 @@ class partidas(models.Model):
     #models.ForeignKey(User, on_delete=models.CASCADE)
     minutos_jugados= models.IntegerField()
     puntaje=models.IntegerField()
+    nivel=models.CharField(max_length=50, blank=True)
+    intentos=models.IntegerField(default=0)

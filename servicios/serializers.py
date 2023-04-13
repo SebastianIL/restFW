@@ -10,5 +10,5 @@ class usuariosSerializer(serializers.HyperlinkedModelSerializer):
 class partidasSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = partidas
-        fields = ('id', 'fecha','id_usuarios', 'minutos_jugados','puntaje')
+        fields = ('id', 'fecha','id_usuarios', 'minutos_jugados','puntaje','nivel','intentos')
 
